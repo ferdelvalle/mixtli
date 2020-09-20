@@ -1,8 +1,11 @@
 
-var spreadsheetId = "1XfNo5AiEfNaXxXAjnhjFurRY09N7ZR5zC2lBqqIk1lg",
+var spreadsheetId = "1CUoG4kb5IwYGYnX0cxmU8CyoYsPvEgflNE-fAJFCVLM",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId +
   "/od6/public/basic?alt=json";
+var titulo = "1 ¿A qué se dedica su organización?";
+var rendering = 'chart-container-2';
+var xTitleName = "Organizaciones";
 
 $.get({
   url: url,
@@ -15,94 +18,62 @@ $.get({
     for (i = 0; i < len; i++) {
       parsedData.push({
         label: data[i].title.$t,
-        value: data[i].content.$t.replace('precio: ', '')
-      });
-    }
-
-    new FusionCharts({
-      type: 'bar2d',
-      renderAt: 'chart-container-1',
-      width: '100%',
-      height: '300',
-      dataFormat: 'json',
-      dataSource: {
-        "chart": {
-          "caption": "Best food ever",
-          "yAxisName": "Precio",
-          "numberPrefix": "$"
-        },
-        "data": parsedData
-      }
-    }).render();
-  }
-});
-
-$.get({
-  url: url,
-  success: function(response) {
-    var data = response.feed.entry,
-      len = data.length,
-      i = 0,
-      parsedData = [];
-
-    for (i = 0; i < len; i++) {
-      parsedData.push({
-        label: data[i].title.$t,
-        value: data[i].content.$t.replace('precio: ', '')
+        value: data[i].content.$t.replace('incidencia: ', '')
       });
     }
 
     FusionCharts.ready(function() {
       var chart = new FusionCharts({
           type: 'bar2d',
-          renderAt: 'chart-container-2',
+          renderAt: rendering,
           width: '100%',
-          height: '400',
+          height: '800',
           dataFormat: 'json',
           dataSource: {
             "chart": {
               // caption configuration
-              "caption": "Best food ever",
+              "caption": titulo,
               "captionFontBold": "0",
               "captionFontSize": "20",
 
               // x and y axes configuration
-              "xAxisName": "Actor",
+              "xAxisName": "",
               "xAxisNameFontSize": "18",
               "xAxisNameFontBold": "0",
-              "yAxisName": "Price in mxn",
+              "yAxisName": xTitleName,
               "yAxisNameFontSize": "18",
               "yAxisNameFontBold": "0",
               "showLimits": "0",
 
               // general chart configuration
               "baseFont": "Open Sans",
-              "paletteColors": "#2AA992",
+              "paletteColors": "#00b4ff",
               "plotFillAlpha": "70",
               "usePlotGradientColor": "0",
-              "numberPrefix": "$",
-              "numberSuffix": "M",
-              "bgcolor": "#202C3D",
+              "numberPrefix": "",
+              "numberSuffix": "",
+              "bgcolor": "F5F5F5",
               "bgalpha": "95",
               "canvasbgalpha": "0",
-              "basefontcolor": "#F7F3E7",
+              "basefontcolor": "#00b4ff",
               "showAlternateHGridColor": "0",
               "divlinealpha": "50",
               "divlinedashed": "0",
               "rotateyaxisname": "1",
-              "canvasbordercolor": "#FFF",
-              "canvasborderthickness": ".3",
-              "canvasborderalpha": "100",
+              "canvasbordercolor": "#00b4ff",
+              "canvasborderthickness": "0",
+              "canvasborderalpha": "00",
               "showValues": "0",
               "plotSpacePercent": "12",
               "showPlotBorder": "1",
-              "plotBorderColor": "#2AA992",
+              "plotBorderColor": "#00b4ff",
               "plotBorderThickness": "1",
               "labelFontSize": "15",
               "outCnvBaseFontSize": "15",
 
               // tooltip configuration
-              "toolTipBgColor": "#000",
+              "toolTipBgColor": "#FFF",
+              "numberSuffix": " Organizaciones",
               "toolTipPadding": "12",
               "toolTipBorderRadius": "3",
               "toolTipBorderThickness": "1",

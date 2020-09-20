@@ -20,7 +20,7 @@
 }
 
 body {
-  background: white;
+  background: #F5F5F5;
   margin: 0;
   font-family: arial;
   animation: bugfix infinite 1s;
@@ -58,7 +58,7 @@ a {
   height: 40vh;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 48em) {
   .language {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -72,6 +72,36 @@ a {
 .language-image {
   width: auto;
   height: 25vh;
+}
+
+/* SURVEY */
+.survey-main-text {
+  width: 80%;
+  height: 150vh;
+  margin: 0 10% 0 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 48em) {
+  .survey-main-text {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.text-title {
+  color: #00b4ff;
+}
+
+#survey-link {
+  color: #00b4ff;
+}
+
+.survey-cards {
+  border: solid red 2px;
 }
 
 /* CONTACT */
