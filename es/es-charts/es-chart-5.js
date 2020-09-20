@@ -1,11 +1,11 @@
 
-var spreadsheetId = "1CUoG4kb5IwYGYnX0cxmU8CyoYsPvEgflNE-fAJFCVLM",
+var spreadsheetId5 = "1UInYHEn4QKX_bm34jhbK8Nosy5v3Gj5m4Zts4qmGX1c",
   url = "https://spreadsheets.google.com/feeds/list/" +
-  spreadsheetId +
+  spreadsheetId5 +
   "/od6/public/basic?alt=json";
-var titulo1 = "1 ¿A qué se dedica su organización?";
-var rendering1 = 'chart-container-1';
-var xtitleName1 = "";
+var titulo5 = "5 ¿Su organización tiene clientes o proveedores en otras ciudades, estados o países? ";
+var rendering5 = 'chart-container-5';
+var xtitleName5 = "";
 
 $.get({
   url: url,
@@ -25,14 +25,14 @@ $.get({
     FusionCharts.ready(function() {
       var chart = new FusionCharts({
           type: 'bar2d',
-          renderAt: rendering1,
+          renderAt: rendering5,
           width: '100%',
-          height: '800',
+          height: '300',
           dataFormat: 'json',
           dataSource: {
             "chart": {
               // caption configuration
-              "caption": titulo1,
+              "caption": titulo5,
               "captionFontBold": "0",
               "captionFontSize": "20",
 
@@ -40,7 +40,7 @@ $.get({
               "xAxisName": "",
               "xAxisNameFontSize": "18",
               "xAxisNameFontBold": "0",
-              "yAxisName": xtitleName1,
+              "yAxisName": xtitleName5,
               "yAxisNameFontSize": "18",
               "yAxisNameFontBold": "0",
               "showLimits": "0",

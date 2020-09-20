@@ -74,6 +74,11 @@ a {
   height: 25vh;
 }
 
+/* RESULTS */
+.part-titles {
+  text-align: center;
+}
+
 /* SURVEY */
 .survey-main-text {
   width: 80%;

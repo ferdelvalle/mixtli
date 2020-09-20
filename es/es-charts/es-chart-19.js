@@ -1,11 +1,11 @@
 
-var spreadsheetId = "1CUoG4kb5IwYGYnX0cxmU8CyoYsPvEgflNE-fAJFCVLM",
+var spreadsheetId19 = "1hAiSqumiBUoDZQB4tmc_t5avF6ZzODLCUi_kteilptM",
   url = "https://spreadsheets.google.com/feeds/list/" +
-  spreadsheetId +
+  spreadsheetId19 +
   "/od6/public/basic?alt=json";
-var titulo1 = "1 ¿A qué se dedica su organización?";
-var rendering1 = 'chart-container-1';
-var xtitleName1 = "";
+var titulo19 = "19 Para una empresa, utilizar servicios de cómputo en la nube es más barato que utilizar servidores propios";
+var rendering19 = 'chart-container-19';
+var xtitleName19 = "";
 
 $.get({
   url: url,
@@ -25,14 +25,14 @@ $.get({
     FusionCharts.ready(function() {
       var chart = new FusionCharts({
           type: 'bar2d',
-          renderAt: rendering1,
+          renderAt: rendering19,
           width: '100%',
-          height: '800',
+          height: '300',
           dataFormat: 'json',
           dataSource: {
             "chart": {
               // caption configuration
-              "caption": titulo1,
+              "caption": titulo19,
               "captionFontBold": "0",
               "captionFontSize": "20",
 
@@ -40,7 +40,7 @@ $.get({
               "xAxisName": "",
               "xAxisNameFontSize": "18",
               "xAxisNameFontBold": "0",
-              "yAxisName": xtitleName1,
+              "yAxisName": xtitleName19,
               "yAxisNameFontSize": "18",
               "yAxisNameFontBold": "0",
               "showLimits": "0",

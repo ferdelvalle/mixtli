@@ -1,11 +1,11 @@
 
-var spreadsheetId = "1CUoG4kb5IwYGYnX0cxmU8CyoYsPvEgflNE-fAJFCVLM",
+var spreadsheetId14 = "1yctdp7FtcPFE-mULcE0sv_3u_5aPgtZKxeur2aphNqA",
   url = "https://spreadsheets.google.com/feeds/list/" +
-  spreadsheetId +
+  spreadsheetId14 +
   "/od6/public/basic?alt=json";
-var titulo1 = "1 ¿A qué se dedica su organización?";
-var rendering1 = 'chart-container-1';
-var xtitleName1 = "";
+var titulo14 = "14 ¿En su organización, existe algún reglamento o política referente a la seguridad de datos?";
+var rendering14 = 'chart-container-14';
+var xtitleName14 = "";
 
 $.get({
   url: url,
@@ -25,14 +25,14 @@ $.get({
     FusionCharts.ready(function() {
       var chart = new FusionCharts({
           type: 'bar2d',
-          renderAt: rendering1,
+          renderAt: rendering14,
           width: '100%',
-          height: '800',
+          height: '400',
           dataFormat: 'json',
           dataSource: {
             "chart": {
               // caption configuration
-              "caption": titulo1,
+              "caption": titulo14,
               "captionFontBold": "0",
               "captionFontSize": "20",
 
@@ -40,7 +40,7 @@ $.get({
               "xAxisName": "",
               "xAxisNameFontSize": "18",
               "xAxisNameFontBold": "0",
-              "yAxisName": xtitleName1,
+              "yAxisName": xtitleName14,
               "yAxisNameFontSize": "18",
               "yAxisNameFontBold": "0",
               "showLimits": "0",

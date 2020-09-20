@@ -1,11 +1,11 @@
 
-var spreadsheetId = "1CUoG4kb5IwYGYnX0cxmU8CyoYsPvEgflNE-fAJFCVLM",
+var spreadsheetId15 = "1iqPMcZNNa1A30_fdy-zDjHScOZ0FeXEqs_fnd8naNk8",
   url = "https://spreadsheets.google.com/feeds/list/" +
-  spreadsheetId +
+  spreadsheetId15 +
   "/od6/public/basic?alt=json";
-var titulo1 = "1 ¿A qué se dedica su organización?";
-var rendering1 = 'chart-container-1';
-var xtitleName1 = "";
+var titulo15 = "15 ¿Conoce qué es el cómputo en la nube? (Cloud Computing)";
+var rendering15 = 'chart-container-15';
+var xtitleName15 = "";
 
 $.get({
   url: url,
@@ -25,14 +25,14 @@ $.get({
     FusionCharts.ready(function() {
       var chart = new FusionCharts({
           type: 'bar2d',
-          renderAt: rendering1,
+          renderAt: rendering15,
           width: '100%',
-          height: '800',
+          height: '300',
           dataFormat: 'json',
           dataSource: {
             "chart": {
               // caption configuration
-              "caption": titulo1,
+              "caption": titulo15,
               "captionFontBold": "0",
               "captionFontSize": "20",
 
@@ -40,7 +40,7 @@ $.get({
               "xAxisName": "",
               "xAxisNameFontSize": "18",
               "xAxisNameFontBold": "0",
-              "yAxisName": xtitleName1,
+              "yAxisName": xtitleName15,
               "yAxisNameFontSize": "18",
               "yAxisNameFontBold": "0",
               "showLimits": "0",

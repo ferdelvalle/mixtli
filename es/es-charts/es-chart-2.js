@@ -1,14 +1,14 @@
 
-var spreadsheetId = "1CUoG4kb5IwYGYnX0cxmU8CyoYsPvEgflNE-fAJFCVLM",
-  url = "https://spreadsheets.google.com/feeds/list/" +
-  spreadsheetId +
+var spreadsheetId2 = "1FTm0PBMy6UpgV7_kFHMlg3H4jbcZ1BjP4R__JocI8hg",
+  url2 = "https://spreadsheets.google.com/feeds/list/" +
+  spreadsheetId2 +
   "/od6/public/basic?alt=json";
-var titulo1 = "1 ¿A qué se dedica su organización?";
-var rendering1 = 'chart-container-1';
-var xtitleName1 = "";
+var titulo2 = "2 ¿Cuántas personas trabajan en su organización?";
+var rendering2 = 'chart-container-2';
+var xtitleName2 = "Personas";
 
 $.get({
-  url: url,
+  url: url2,
   success: function(response) {
     var data = response.feed.entry,
       len = data.length,
@@ -25,14 +25,14 @@ $.get({
     FusionCharts.ready(function() {
       var chart = new FusionCharts({
           type: 'bar2d',
-          renderAt: rendering1,
+          renderAt: rendering2,
           width: '100%',
-          height: '800',
+          height: '400',
           dataFormat: 'json',
           dataSource: {
             "chart": {
               // caption configuration
-              "caption": titulo1,
+              "caption": titulo2,
               "captionFontBold": "0",
               "captionFontSize": "20",
 
@@ -40,7 +40,7 @@ $.get({
               "xAxisName": "",
               "xAxisNameFontSize": "18",
               "xAxisNameFontBold": "0",
-              "yAxisName": xtitleName1,
+              "yAxisName": xtitleName2,
               "yAxisNameFontSize": "18",
               "yAxisNameFontBold": "0",
               "showLimits": "0",

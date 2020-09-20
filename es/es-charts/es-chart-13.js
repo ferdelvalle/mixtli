@@ -1,11 +1,11 @@
 
-var spreadsheetId = "1CUoG4kb5IwYGYnX0cxmU8CyoYsPvEgflNE-fAJFCVLM",
+var spreadsheetId13 = "1Gsp1NCHng7w8dhQQbpkPOp6gA__xTd_qNZzaEfINH5c",
   url = "https://spreadsheets.google.com/feeds/list/" +
-  spreadsheetId +
+  spreadsheetId13 +
   "/od6/public/basic?alt=json";
-var titulo1 = "1 ¿A qué se dedica su organización?";
-var rendering1 = 'chart-container-1';
-var xtitleName1 = "";
+var titulo13 = "13 ¿Conoce los riesgos de los distintos medios al momento de compartir archivos a otros miembros de su organización?";
+var rendering13 = 'chart-container-13';
+var xtitleName13 = "";
 
 $.get({
   url: url,
@@ -25,14 +25,14 @@ $.get({
     FusionCharts.ready(function() {
       var chart = new FusionCharts({
           type: 'bar2d',
-          renderAt: rendering1,
+          renderAt: rendering13,
           width: '100%',
-          height: '800',
+          height: '400',
           dataFormat: 'json',
           dataSource: {
             "chart": {
               // caption configuration
-              "caption": titulo1,
+              "caption": titulo13,
               "captionFontBold": "0",
               "captionFontSize": "20",
 
@@ -40,7 +40,7 @@ $.get({
               "xAxisName": "",
               "xAxisNameFontSize": "18",
               "xAxisNameFontBold": "0",
-              "yAxisName": xtitleName1,
+              "yAxisName": xtitleName13,
               "yAxisNameFontSize": "18",
               "yAxisNameFontBold": "0",
               "showLimits": "0",
