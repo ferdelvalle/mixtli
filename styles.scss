@@ -19,6 +19,23 @@
 	z-index: -1;
 }
 
+body {
+  background: white;
+  margin: 0;
+  font-family: arial;
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
+  -moz-animation: bugfix infinite 1s;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+a {
+  color: #fff;
+}
+
 .title {
   margin: 1vh 0 5vh 0;
   color: white;
@@ -52,6 +69,201 @@
 
 }
 
+/* MENUS */
+
+/* DESKTOP MENU */
+
+@media (min-width: 48em) {
+  .navigation {
+    background-color: #00B4FE;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #00B4FE;
+  }
+
+  .navigation li a {
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px;
+  }
+
+  .navigation li a:hover, .header .menu-btn:hover {
+    background-color: #1899d5;
+  }
+
+  .navigation .logod {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  .navigation li {
+    float: left;
+  }
+
+  .navigation .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .logom {
+    display: none;
+  }
+
+}
+/* MOBILE MENU */
+
+@media (max-width: 48em) {
+  @keyframes bugfix {
+    from {
+      padding: 0;
+    }
+
+    to {
+      padding: 0;
+    }
+  }
+
+  @-webkit-keyframes bugfix {
+    from {
+      padding: 0;
+    }
+
+    to {
+      padding: 0;
+    }
+  }
+
+  .logod {
+    display: none;
+  }
+
+  .logom {
+    display: block;
+    position: relative;
+    float: left;
+    font-size: 2em;
+    text-decoration: none;
+    left: 1em;
+    top: 1em;
+    color: #00b4ff;
+  }
+
+  #overlay-button {
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    padding: 26px 11px;
+    z-index: 5;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  #overlay-button span {
+    height: 4px;
+    width: 35px;
+    border-radius: 2px;
+    background-color: #00b4ff;
+    position: relative;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #overlay-button span:before {
+    top: -10px;
+    visibility: visible;
+  }
+
+  #overlay-button span:after {
+    top: 10px;
+  }
+
+  #overlay-button span:before, #overlay-button span:after {
+    height: 4px;
+    width: 35px;
+    border-radius: 2px;
+    background-color: #00b4ff;
+    position: absolute;
+    content: "";
+    transition: all 0.2s ease-in-out;
+  }
+
+  #overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+    background: #00b4ff;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox]:checked ~ #overlay {
+    visibility: visible;
+  }
+
+  input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+    background: transparent;
+  }
+
+  input[type=checkbox]:checked ~ #overlay-button span:before {
+    transform: rotate(45deg) translate(7px, 7px);
+    opacity: 1;
+  }
+
+  input[type=checkbox]:checked ~ #overlay-button span:after {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  #overlay {
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+  }
+
+  #overlay.active {
+    visibility: visible;
+  }
+
+  #overlay ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  #overlay ul li {
+    padding: 1em;
+  }
+
+  #overlay ul li a {
+    color: #00b4ff;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+
+  #overlay ul li a:hover {
+    color: #00b4ff;
+  }
+}
+
 /* CHARTS */
 
 .plotToolText{
@@ -59,35 +271,35 @@
   letter-spacing: 1px;
 }
 
-/* ANIMATION */
+/* CLOUDS ANIMATION */
 
 /* KEYFRAMES */
 
 @-webkit-keyframes animateCloud {
-    0% {
-        margin-left: -1000px;
-    }
-    100% {
-        margin-left: 100%;
-    }
+  0% {
+    margin-left: -1000px;
+  }
+  100% {
+    margin-left: 100%;
+  }
 }
 
 @-moz-keyframes animateCloud {
-    0% {
-        margin-left: -1000px;
-    }
-    100% {
-        margin-left: 100%;
-    }
+  0% {
+    margin-left: -1000px;
+  }
+  100% {
+    margin-left: 100%;
+  }
 }
 
 @keyframes animateCloud {
-    0% {
-        margin-left: -1000px;
-    }
-    100% {
-        margin-left: 100%;
-    }
+  0% {
+    margin-left: -1000px;
+  }
+  100% {
+    margin-left: 100%;
+  }
 }
 
 /* ANIMATIONS */
@@ -96,7 +308,6 @@
 	-webkit-animation: animateCloud 35s linear infinite;
 	-moz-animation: animateCloud 35s linear infinite;
 	animation: animateCloud 35s linear infinite;
-	
 	-webkit-transform: scale(0.65);
 	-moz-transform: scale(0.65);
 	transform: scale(0.65);
@@ -106,7 +317,6 @@
 	-webkit-animation: animateCloud 20s linear infinite;
 	-moz-animation: animateCloud 20s linear infinite;
 	animation: animateCloud 20s linear infinite;
-	
 	-webkit-transform: scale(0.3);
 	-moz-transform: scale(0.3);
 	transform: scale(0.3);
@@ -116,7 +326,6 @@
 	-webkit-animation: animateCloud 30s linear infinite;
 	-moz-animation: animateCloud 30s linear infinite;
 	animation: animateCloud 30s linear infinite;
-	
 	-webkit-transform: scale(0.5);
 	-moz-transform: scale(0.5);
 	transform: scale(0.5);
@@ -126,7 +335,6 @@
 	-webkit-animation: animateCloud 18s linear infinite;
 	-moz-animation: animateCloud 18s linear infinite;
 	animation: animateCloud 18s linear infinite;
-	
 	-webkit-transform: scale(0.4);
 	-moz-transform: scale(0.4);
 	transform: scale(0.4);
@@ -136,7 +344,6 @@
 	-webkit-animation: animateCloud 25s linear infinite;
 	-moz-animation: animateCloud 25s linear infinite;
 	animation: animateCloud 25s linear infinite;
-	
 	-webkit-transform: scale(0.55);
 	-moz-transform: scale(0.55);
 	transform: scale(0.55);
@@ -153,15 +360,12 @@
 	background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
 	background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
-	
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	border-radius: 100px;
-	
 	-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-
 	height: 120px;
 	position: relative;
 	width: 350px;
@@ -178,7 +382,6 @@
 	-webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	border-radius: 100px;
-
 	height: 100px;
 	left: 50px;
 	top: -50px;
@@ -189,7 +392,6 @@
 	-webkit-border-radius: 200px;
 	-moz-border-radius: 200px;
 	border-radius: 200px;
-
 	width: 180px;
 	height: 180px;
 	right: 50px;
