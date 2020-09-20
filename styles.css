@@ -74,6 +74,16 @@ a {
   height: 25vh;
 }
 
+/* CONTACT */
+.contact-spacer {
+  width: 100%;
+  height: 100px;
+}
+
+.contact-form {
+  height: 90vh;
+}
+
 /* MENUS */
 /* DESKTOP MENU */
 @media (min-width: 48em) {
