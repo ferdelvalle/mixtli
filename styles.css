@@ -95,6 +95,11 @@ a {
   padding: 5%;
 }
 
+.spacer {
+  width: 100%;
+  height: 100px;
+}
+
 /* HOME */
 .home-title {
   font-size: 3.2vw;
@@ -159,11 +164,6 @@ a {
 }
 
 /* CONTACT */
-.contact-spacer {
-  width: 100%;
-  height: 100px;
-}
-
 .contact-form {
   height: 90vh;
 }
@@ -212,6 +212,9 @@ a {
   .logom {
     display: none;
   }
+  .mobile-menu-background {
+    display: none;
+  }
 }
 
 /* MOBILE MENU */
@@ -237,16 +240,17 @@ a {
   }
   .logom {
     display: block;
-    position: relative;
+    position: fixed;
     float: left;
     font-size: 2em;
     text-decoration: none;
     left: 1em;
     top: 1em;
-    color: #00b4ff;
+    color: #fff;
+    z-index: 1;
   }
   #overlay-button {
-    position: absolute;
+    position: fixed;
     right: 2em;
     top: 1em;
     padding: 26px 11px;
@@ -261,7 +265,7 @@ a {
     height: 4px;
     width: 35px;
     border-radius: 2px;
-    background-color: #00b4ff;
+    background-color: #fff;
     position: relative;
     display: block;
     -webkit-transition: all 0.2s ease-in-out;
@@ -278,14 +282,14 @@ a {
     height: 4px;
     width: 35px;
     border-radius: 2px;
-    background-color: #00b4ff;
+    background-color: #fff;
     position: absolute;
     content: "";
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
   #overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
-    background: #00b4ff;
+    background: #fff;
   }
   input[type=checkbox] {
     display: none;
@@ -308,7 +312,7 @@ a {
   #overlay {
     height: 100vh;
     width: 100vw;
-    background: #fff;
+    background: #00b4ff;
     z-index: 2;
     visibility: hidden;
     position: fixed;
@@ -339,12 +343,19 @@ a {
     padding: 1em;
   }
   #overlay ul li a {
-    color: #00b4ff;
+    color: #fff;
     text-decoration: none;
     font-size: 1.5em;
   }
   #overlay ul li a:hover {
-    color: #00b4ff;
+    color: #fff;
+  }
+  .mobile-menu-background {
+    background-color: #00b4ff;
+    height: 95px;
+    width: 100%;
+    z-index: 0;
+    position: fixed;
   }
 }
 

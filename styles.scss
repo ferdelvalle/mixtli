@@ -90,6 +90,11 @@ a {
   padding: 5%;
 }
 
+.spacer {
+  width: 100%;
+  height: 100px;
+}
+
 /* HOME */
 
 .mixtli-logo {
@@ -157,10 +162,7 @@ a {
 }
 
 /* CONTACT */
-.contact-spacer {
-  width: 100%;
-  height: 100px;
-}
+
 .contact-form {
   height: 90vh;
 }
@@ -217,6 +219,9 @@ a {
     display: none;
   }
 
+  .mobile-menu-background {
+    display: none
+  }
 }
 /* MOBILE MENU */
 
@@ -247,17 +252,18 @@ a {
 
   .logom {
     display: block;
-    position: relative;
+    position: fixed;
     float: left;
     font-size: 2em;
     text-decoration: none;
     left: 1em;
     top: 1em;
-    color: $blue;
+    color: $white;
+    z-index: 1;
   }
 
   #overlay-button {
-    position: absolute;
+    position: fixed;
     right: 2em;
     top: 1em;
     padding: 26px 11px;
@@ -270,7 +276,7 @@ a {
     height: 4px;
     width: 35px;
     border-radius: 2px;
-    background-color: $blue;
+    background-color: $white;
     position: relative;
     display: block;
     transition: all 0.2s ease-in-out;
@@ -289,14 +295,14 @@ a {
     height: 4px;
     width: 35px;
     border-radius: 2px;
-    background-color: $blue;
+    background-color: $white;
     position: absolute;
     content: "";
     transition: all 0.2s ease-in-out;
   }
 
   #overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
-    background: $blue;
+    background: $white;
   }
 
   input[type=checkbox] {
@@ -323,7 +329,7 @@ a {
   #overlay {
     height: 100vh;
     width: 100vw;
-    background: $white;
+    background: $blue;
     z-index: 2;
     visibility: hidden;
     position: fixed;
@@ -349,13 +355,21 @@ a {
   }
 
   #overlay ul li a {
-    color: $blue;
+    color: $white;
     text-decoration: none;
     font-size: 1.5em;
   }
 
   #overlay ul li a:hover {
-    color: $blue;
+    color: $white;
+  }
+
+  .mobile-menu-background {
+    background-color: $blue;
+    height: 95px;
+    width: 100%;
+    z-index: 0;
+    position:fixed;
   }
 }
 
