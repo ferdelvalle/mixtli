@@ -92,7 +92,7 @@ a {
 }
 
 .cards {
-  padding: 5%;
+  padding: 3rem;
 }
 
 .spacer {
@@ -115,6 +115,17 @@ a {
   }
 }
 
+.home-card-title {
+  text-align: center;
+  font-size: 32px;
+}
+
+@media (max-width: 48em) {
+  .home-card-title {
+    font-size: 38px;
+  }
+}
+
 .home-item-large {
   text-align: center;
   -ms-grid-column: 1;
@@ -127,11 +138,6 @@ a {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-}
-
-.home-item {
-  height: 40vh;
-  border: #00b4ff solid 4px;
 }
 
 .home-footer {
