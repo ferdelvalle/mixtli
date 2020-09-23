@@ -89,9 +89,13 @@ a {
 }
 
 /* SURVEY */
+.survey-description {
+  width: 80%;
+  margin: 0 10% 0 10%;
+}
+
 .survey-main-text {
   width: 80%;
-  height: 150vh;
   margin: 0 10% 0 10%;
   display: -ms-grid;
   display: grid;
@@ -115,7 +119,7 @@ a {
 }
 
 .survey-cards {
-  border: solid red 2px;
+  padding: 5%;
 }
 
 /* CONTACT */
