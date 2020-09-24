@@ -4,10 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mixtli</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="en-charts.js"></script>
+  <link rel="icon" href="../Assets/icon.png">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  
+
+  <!-- Hidden Checkbox for Mobile Nav Button -->
+  <input type="checkbox" class="hide" id="overlay-input" />
+  <!-- Mobile Only: Hamburger Menu -->
+  <label for="overlay-input" class="hide" id="overlay-button"><span></span></label>
+  <!-- Mobile Only: Logo -->
+  <a href="../home.html" class="logom">Mixli</a>
+  <!-- Navigation Mobile & Desktop -->
+  <header id="overlay" class="navigation">
+    <!-- Desktop Only: Logo -->
+    <a href="../home.html" class="logod">Mixtli</a>
+    <ul>
+      <li><a href="./en-home.html">Home</a></li>
+      <li><a href="./en-about.html">About</a></li>
+      <li><a href="./en-results.html">Data</a></li>
+      <li><a href="./en-survey.html">Survey</a></li>
+      <li><a href="./en-contact.html">Contact</a></li>
+    </ul>
+  </header>
+  <div class="mobile-menu-background"></div>
+  <div class="spacer"></div>
+  <section class="home-intro main-text">
+    <img class ="mixtli-logo home-item-large" src="../Assets/menu-logo-desktop-blue.svg" alt="mixtli logo">
+    <h1 class="text-title home-title home-item-large">Penetración de mercado del uso de las tecnologías en la nube en empresas latinoamericanas</h1>
+  </section>
+  <section class="home-content main-text">
+    <div class="cards home-item-large">
+      <h1 class="text-title home-card-title">Sobre Mixtli</h1>
+      <h3 class="text-body" id="background-text">
+        Mixtli es una plataforma de presentación de datos en forma de gráficas creada para este proyecto, utiliza tecnologías muy simples, como Zoho Forms y Google Sheets para presentar de forma gráfica y amigable los resultados del estudio que participa en el Cuarto Encuentro de Inovación y Creatividad para la Internacionalización en Casa 2020.
+        <br><br>
+        El proyecto se enfoca en encontrar las causas de la lenta adopción de tecnologías de cómputo en la nube en América Latina. A través de encuestas realizadas a distintas organizaciones, encontramos datos muy interesntes, que te invitamos a consultar en la sección de resultados.
+        <br><br>
+        Esta plataforma es de código abierto y se puede encontrar más información sobre cómo replicarla en el repositorio de Github.
+      </h3>  
+    </div>
+    <div class="cards home-item">
+      <h1 class="text-title home-card-title">Datos estadísticos</h1>
+      <img src="../Assets/cloud-facts.svg" alt="a cloud image" class="cloud-image">
+    </div>
+    <div class="cards home-item">
+      <h1 class="text-title home-card-title">Uso de la nube</h1>
+      <img src="../Assets/cloud-meter.svg" alt="a cloud image" class="cloud-image">
+    </div>
+  </section>
+  <footer class="home-footer">
+    <section class="main-text">
+      <div class="cards">
+        <p class="footer-text"><a class="footer-link" href="https://github.com/ferdelvalle/mixtli" target="_blank">Consulta el código fuente</a></p>
+      </div>
+      <div class="cards">
+        <p class="footer-text">Todos los derechos reservados</p>
+      </div>
+    </section>
+  </footer>
 </body>
 </html>

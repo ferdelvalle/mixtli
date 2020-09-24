@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixtli</title>
+  <link rel="icon" href="../Assets/icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- Hidden Checkbox for Mobile Nav Button -->
+  <input type="checkbox" class="hide" id="overlay-input" />
+  <!-- Mobile Only: Hamburger Menu -->
+  <label for="overlay-input" class="hide" id="overlay-button"><span></span></label>
+  <!-- Mobile Only: Logo -->
+  <a href="../home.html" class="logom">Mixli</a>
+  <!-- Navigation Mobile & Desktop -->
+  <header id="overlay" class="navigation">
+    <!-- Desktop Only: Logo -->
+    <a href="../home.html" class="logod">Mixtli</a>
+    <ul>
+      <li><a href="./en-home.html">Home</a></li>
+      <li><a href="./en-about.html">About</a></li>
+      <li><a href="./en-results.html">Data</a></li>
+      <li><a href="./en-survey.html">Survey</a></li>
+      <li><a href="./en-contact.html">Contact</a></li>
+    </ul>
+  </header>
+  <div class="mobile-menu-background"></div>
+  <div class="spacer"></div>
+  <section class="survey-description">
+    <h1 class="text-title">La encuesta</h1>
+    <p class="text-body">Para recopilar información, se diseñó una encuesta de 20 preguntas dividida en cuatro partes:</p>
+    <ol>
+      <li>Diagnóstico general de la organización</li>
+      <br>
+      <li>Diagnóstico de TI</li>
+      <br>
+      <li>Diagnóstico de uso de TI</li>
+      <br>
+      <li>Diagnóstico de conocimiento de la nube</li>
+    </ol>
+  </section>
+  <section class="main-text">
+    <div class="cards">
+      <h3 class="text-title">1 Diagnóstico general de la organización</h3>
+      <p class="text-body">
+        El propósito de esta sección es determinar el tipo de organización a la que pertenece la persona que responde la encuesta con el objetivo de determinar si algunos factores como la ubicación o el tamaño (Entre otros) tienen relevancia.<br>Las preguntas son:
+      </p>
+      <ul>
+        <li>¿A qué se dedica su organización?</li>
+        <br>
+        <li>¿Cuántas personas trabajan en su organización?</li>
+        <br>
+        <li>¿Su organización tiene más de una sucursal u oficina?</li>
+        <br>
+        <li>¿En qué país se encuentra su organización?</li>
+        <br>
+        <li>¿En qué estado se encuentra su organización? (Sólo disponible para México)</li>
+        <br>
+        <li>¿Su organización tiene clientes o proveedores en otras ciudades, estados o países?</li>
+      </ul>
+
+    </div>
+    <div class="cards">
+      <h3 class="text-title">2 Diagnóstico de TI</h3>
+      <p class="text-body">
+        Conocer si una organización utiliza herramientas de TI y cuáles, es definitivamente relevante a la hora de poder hacer un diagnóstico de cuánto uso se hace de las tecnologías de la nube, por que en esta sección se pregunta:
+      </p>
+      <ul>
+        <li>¿En su organización, utilizan equipo de cómputo?</li>
+        <br>
+        <li>¿En su organización, utilizan internet para alguna o todas las tareas relacionadas con el trabajo?</li>
+        <br>
+        <li>¿En su organización, cuentan con un departamento o persona encargada de TI?</li>
+        <br>
+        <li>¿Cuáles de los siguientes programas se utilizan en su organización?</li>
+      </ul>
+    </div>
+    <div class="cards">
+      <h3 class="text-title">3 Diagnóstico de uso de TI</h3>
+      <p class="text-body">Esta sección se enfoca en la manera en la que se usan las tecnologías de la información para determinar cómo se almacena y comparte información entre los distintos miembros de la organización a través de las siguientes preguntas:</p>
+      <ul>
+        <li>¿En su organización, dónde se guardan los documentos?</li>
+        <br>
+        <li>¿Sabe si su organización utiliza algún tipo de servidor?</li>
+        <br>
+        <li>Cuándo quiere compartir un archivo con alguien más en su organización ¿Qué medio utiliza?</li>
+        <br>
+        <li>¿Conoce los riesgos de los distintos medios de compartir archivos a otros miembros de su organización?</li>
+        <br>
+        <li>¿En su organización, existe algún reglamento o política referente a la seguridad de datos?</li>
+      </ul>
+    </div>
+    <div class="cards">
+      <h3 class="text-title">4 Diagnóstico de conocimiento de la nube</h3>
+      <p class="text-body">La última parte de la encuesta está directamente relacionada con qué tanto se conoce la Nube y sus principales proveedores. También mide la percepción que se tiene en cuanto a costos, seguridad y facilidad de implementación y uso de tecnologías de cómputo en la nube.<br> Las preguntas son:</p>
+      <ul>
+        <li>¿Conoce qué es el cómputo en la nube? (Cloud Computing)</li>
+        <br>
+        <li>¿Ha escuchado de AWS o Azure?</li>
+        <br>
+        <li>¿Su organización usa actualmente servicios de cómputo en la nube o tiene planeas de usar servicios de computo en la nube en el 2021?</li>
+        <br>
+        <li>¿Dónde considera que está más segura su información?</li>
+        <br>
+        <li>Para una empresa, utilizar servicios de cómputo en la nube es más barato que utilizar servidores propios</li>
+        <br>
+        <li>Para una empresa, utilizar de cómputo en la nube es más seguro que utilizar servidores propios</li>
+        <br>
+        <li>Utilizar servicios de cómputo en la nube es mucho más difícil que utilizar servidores propios</li>
+      </ul>
+    </div>
+  </section>
+  <section class="survey-description">
+    <a id="survey-link" href="https://forms.zohopublic.com/thisisfer/form/EncuestaNube2020/formperma/GHRm5VZJFXOrx3yyWo57VshYEPDUngzM_ukqBrBOqHE?referrername=Mixtli" target="_blank"><h3>La encuesta se puede resolver aquí</h3></a>
+  </section>
+</body>
+</html>
