@@ -1,9 +1,9 @@
 
-var spreadsheetId11 = "17oZXO_Myj-og-Bv7mTgFejhi7Um-GcAhWQDMdMe2K00",
+var spreadsheetId11 = "1linRHsQ0gx0rCRBIQUi5tVQPvcxiXv5GSBpOEF8zTGQ",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId11 +
   "/od6/public/basic?alt=json";
-var titulo11 = "11 ¿Sabe si su organización utiliza algún tipo de servidor?";
+var titulo11 = "11 Do you know if a server, of any kind, is used by your organization?";
 var rendering11 = 'chart-container-11';
 var xtitleName11 = "";
 

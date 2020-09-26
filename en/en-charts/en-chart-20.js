@@ -1,9 +1,9 @@
 
-var spreadsheetId20 = "1_ke__btsASvymQ4VP0Co2HktmArMZwOjpOkGo1lSVTA",
+var spreadsheetId20 = "14xWHW30_AojG8y5nVDh9i3K0evgIXOYZ2fvIPxYBVZU",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId20 +
   "/od6/public/basic?alt=json";
-var titulo20 = "20 Para una empresa, utilizar servicios de cómputo en la nube es más seguro que utilizar servidores propios";
+var titulo20 = "20 For an organization, it is safer to use a cloud computing service than to use their own servers.";
 var rendering20 = 'chart-container-20';
 var xtitleName20 = "";
 

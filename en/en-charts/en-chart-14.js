@@ -1,9 +1,9 @@
 
-var spreadsheetId14 = "1yctdp7FtcPFE-mULcE0sv_3u_5aPgtZKxeur2aphNqA",
+var spreadsheetId14 = "1SbdtdZPIYFkw18J69Fg_EsjXKSUqVaiAmG2LxRazT2g",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId14 +
   "/od6/public/basic?alt=json";
-var titulo14 = "14 ¿En su organización, existe algún reglamento o política referente a la seguridad de datos?";
+var titulo14 = "14 Does your organization have any policies or rules regarding data security?";
 var rendering14 = 'chart-container-14';
 var xtitleName14 = "";
 

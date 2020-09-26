@@ -1,9 +1,9 @@
 
-var spreadsheetId8 = "1IcYGq1iqasypvfbLGlg7mvlfZ4lWdVB4kw5v5lFu22s",
+var spreadsheetId8 = "1sFA5PVUvnq5_PXYGliN1jr3IsIowtAWaISqzAgvF7S4",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId8 +
   "/od6/public/basic?alt=json";
-var titulo8 = "8 ¿En su organización, cuentan con un departamento o persona encargada de TI?";
+var titulo8 = "8 Does your organization have a dedicated IT department, or person?";
 var rendering8 = 'chart-container-8';
 var xtitleName8 = "";
 

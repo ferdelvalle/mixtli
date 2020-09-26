@@ -1,9 +1,9 @@
 
-var spreadsheetId16 = "1J4peX9dJs4b3PHhf362LVLmDRAOI5KG7QOGyEyB0rRs",
+var spreadsheetId16 = "1BPoZMTBGYQxU7-Lt7TVYVx-a0FMi5UDyqnK82NW-fGM",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId16 +
   "/od6/public/basic?alt=json";
-var titulo16 = "16 ¿Ha escuchado de AWS o Azure? ";
+var titulo16 = "16 Have you ever heard of AWS of Azure?";
 var rendering16 = 'chart-container-16';
 var xtitleName16 = "";
 

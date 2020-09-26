@@ -1,9 +1,9 @@
 
-var spreadsheetId7 = "1eKn02TEdH83mmzs21j0-kLvOK9XKf6SmjjpkM7KGXyQ",
+var spreadsheetId7 = "1-6BHHGoKX1GxOk32t3b5gb0fdoqzxiFFfNr_vj35wFY",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId7 +
   "/od6/public/basic?alt=json";
-var titulo7 = "7 ¿En su organización, utilizan internet para alguna o todas las tareas relacionadas con el trabajo? ";
+var titulo7 = "7 Is the internet used for any, or all, tasks within your organization?";
 var rendering7 = 'chart-container-7';
 var xtitleName7 = "";
 

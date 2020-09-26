@@ -1,9 +1,9 @@
 
-var spreadsheetId4b = "1_DnnB6uFFz-tO9bjgUhDhLTEr3VlGkYZEu5OPKzadyA",
+var spreadsheetId4b = "1WOvLtLTCVsTgGznBS3Ro5BbDaYScFFjVuqXWAzbOO20",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId4b +
   "/od6/public/basic?alt=json";
-var titulo4b = "4 bis ¿En qué estado se encuentra su organización?";
+var titulo4b = "4 bis In which state is your organization's main place of business located?";
 var rendering4b = 'chart-container-4-bis';
 var xtitleName4b = "";
 

@@ -1,9 +1,9 @@
 
-var spreadsheetId12 = "1jmHbm6jRjQhk6_Yhkfc0jCElERpFVi1NVN7SZ15w3ik",
+var spreadsheetId12 = "1p2lODyNTdaL1KANrfmpQPjEOFzlJuQRFOdArz6Octvo",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId12 +
   "/od6/public/basic?alt=json";
-var titulo12 = "12 Cuándo quiere compartir un archivo con alguien más en su organización ¿Qué medio utiliza? ";
+var titulo12 = "12 When you want to share a file with another member of your organization, what do you use?";
 var rendering12 = 'chart-container-12';
 var xtitleName12 = "";
 

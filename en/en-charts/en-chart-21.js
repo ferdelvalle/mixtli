@@ -1,9 +1,9 @@
 
-var spreadsheetId21 = "1QIhlC1UIZsbBQtgBRSwdmrbrykS2SCbpZ5Fy0-vXZPo",
+var spreadsheetId21 = "11_HhixXzDSaYY6hrPmiMMzufDaAq_cVyPsTa2eVhHMI",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId21 +
   "/od6/public/basic?alt=json";
-var titulo21 = "21 Utilizar servicios de cómputo en la nube es mucho más difícil que utilizar servidores propios";
+var titulo21 = "21 Using a cloud computing service is a lot more difficult than using servers owned by the organization.";
 var rendering21 = 'chart-container-21';
 var xtitleName21 = "";
 

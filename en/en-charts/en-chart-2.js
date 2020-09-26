@@ -1,9 +1,9 @@
 
-var spreadsheetId2 = "1FTm0PBMy6UpgV7_kFHMlg3H4jbcZ1BjP4R__JocI8hg",
+var spreadsheetId2 = "1I5Le1EJ0Gswncz3tnuymlUxHVzJfcaiwhm7PqaYLHXE",
   url2 = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId2 +
   "/od6/public/basic?alt=json";
-var titulo2 = "2 ¿Cuántas personas trabajan en su organización?";
+var titulo2 = "2 How many employees work at your organization?";
 var rendering2 = 'chart-container-2';
 var xtitleName2 = "Personas";
 

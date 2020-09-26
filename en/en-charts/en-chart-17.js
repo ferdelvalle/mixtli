@@ -1,9 +1,9 @@
 
-var spreadsheetId17 = "1PjhYc9dlKFDOOYFpiVsz_LJTAuAtfviEFURcXXm2Xpg",
+var spreadsheetId17 = "1rUAMPGBYEk6IFiLYiqi_CJarkJ1MqxL1ckMbbadJjXY",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId17 +
   "/od6/public/basic?alt=json";
-var titulo17 = "17 ¿Su organización usa actualmente servicios de cómputo en la nube o tiene planes de usar servicios de cómputo en la nube en el 2021?";
+var titulo17 = "17 Does your organization currently use any cloud computing service , or does it have plans to use any within 2021?";
 var rendering17 = 'chart-container-17';
 var xtitleName17 = "";
 

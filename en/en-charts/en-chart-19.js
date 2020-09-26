@@ -1,9 +1,9 @@
 
-var spreadsheetId19 = "1hAiSqumiBUoDZQB4tmc_t5avF6ZzODLCUi_kteilptM",
+var spreadsheetId19 = "1R1-xD9WBbQ3YGqcTm-v_55kT6nl5zUSaP9kTlJiPM5Q",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId19 +
   "/od6/public/basic?alt=json";
-var titulo19 = "19 Para una empresa, utilizar servicios de cómputo en la nube es más barato que utilizar servidores propios";
+var titulo19 = "19 For an organization, it is less expensive to use a cloud computing service than to use their own servers.";
 var rendering19 = 'chart-container-19';
 var xtitleName19 = "";
 

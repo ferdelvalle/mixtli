@@ -1,9 +1,9 @@
 
-var spreadsheetId10 = "1L4opldAjCkrKWQRaNLlv1aGafpzxMAqSRTjqe83TOxI",
+var spreadsheetId10 = "15bG4RJRplSmAJdZ3Y-Y2aXkYOnls6uWMF-enCbdybHU",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId10 +
   "/od6/public/basic?alt=json";
-var titulo10 = "10 ¿En su organización, dónde guardan los documentos?";
+var titulo10 = "10 Within your organization, where the documents are saved to?";
 var rendering10 = 'chart-container-10';
 var xtitleName10 = "";
 

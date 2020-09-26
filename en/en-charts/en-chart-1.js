@@ -1,9 +1,9 @@
 
-var spreadsheetId = "1CUoG4kb5IwYGYnX0cxmU8CyoYsPvEgflNE-fAJFCVLM",
+var spreadsheetId = "1gCTapzoSpZ_OV4Eftl2iYaVrkHgzB5PJiOSx4h-H9YU",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId +
   "/od6/public/basic?alt=json";
-var titulo1 = "1 ¿A qué se dedica su organización?";
+var titulo1 = "1 To which industry does your organization belong to?";
 var rendering1 = 'chart-container-1';
 var xtitleName1 = "";
 

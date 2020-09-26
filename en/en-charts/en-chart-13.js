@@ -1,9 +1,9 @@
 
-var spreadsheetId13 = "1Gsp1NCHng7w8dhQQbpkPOp6gA__xTd_qNZzaEfINH5c",
+var spreadsheetId13 = "1r0E2-luiMkvp9mwycaKWx8k9xbs6Qk5CkCndsfQ92CU",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId13 +
   "/od6/public/basic?alt=json";
-var titulo13 = "13 ¿Conoce los riesgos de los distintos medios al momento de compartir archivos a otros miembros de su organización?";
+var titulo13 = "13 Are you aware of the risks involved with the different ways of sharing files with other members of your organization?";
 var rendering13 = 'chart-container-13';
 var xtitleName13 = "";
 

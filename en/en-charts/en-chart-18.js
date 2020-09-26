@@ -1,9 +1,9 @@
 
-var spreadsheetId18 = "10392u6ZhdtF27DVmXKFvwNj2IRnaKfRv6yfr7kjutvE",
+var spreadsheetId18 = "1XaefyBWHbNVt4yDBRUea2npfMYHYxoTCOaudx0ohrbQ",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId18 +
   "/od6/public/basic?alt=json";
-var titulo18 = "18 ¿Dónde considera que está más segura su información?";
+var titulo18 = "18 Where would you consider the safest place to store your information?";
 var rendering18 = 'chart-container-18';
 var xtitleName18 = "";
 

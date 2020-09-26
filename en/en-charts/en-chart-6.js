@@ -1,9 +1,9 @@
 
-var spreadsheetId6 = "1KXUuaBNHvC1OdfvVlXsOZYO0AmIGtKfsGhXM5naJP5w",
+var spreadsheetId6 = "1JoQqJG3SPX5hnQQRiM7J-s4AXsyc3b5B03BWg4x0wjM",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId6 +
   "/od6/public/basic?alt=json";
-var titulo6 = "6 ¿En su organización, utilizan equipo de cómputo?";
+var titulo6 = "6 Does your organization use computers?";
 var rendering6 = 'chart-container-6';
 var xtitleName6 = "";
 

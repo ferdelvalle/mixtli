@@ -1,9 +1,9 @@
 
-var spreadsheetId15 = "1iqPMcZNNa1A30_fdy-zDjHScOZ0FeXEqs_fnd8naNk8",
+var spreadsheetId15 = "1rbv86mRWVT2fSmikuex5_bdnLoUD7iNXFIvfuMIb0pY",
   url = "https://spreadsheets.google.com/feeds/list/" +
   spreadsheetId15 +
   "/od6/public/basic?alt=json";
-var titulo15 = "15 ¿Conoce qué es el cómputo en la nube? (Cloud Computing)";
+var titulo15 = "15 Do you know what Cloud Computing is?";
 var rendering15 = 'chart-container-15';
 var xtitleName15 = "";
 
